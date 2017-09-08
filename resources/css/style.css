@@ -11,20 +11,20 @@ h1 {
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 24px;
-    color: #4e4e4e;
+    color: #0A3B6B;
 }
 
 h2 {
     font-size: 28px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    color: #4e4e4e;
+    color: #0A3B6B;
 }
 
 h3 {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
-    color: #4e4e4e;
+    color: #0A3B6B;
 }
 
 a {
@@ -61,7 +61,7 @@ nav {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
     font-weight: bold;
-    color: #5AA6FF;
+    color: #0A3B6B;
     margin-left: 5px;
 }
 
@@ -70,12 +70,12 @@ nav {
     align-items: center;
 }
 
-#menu li {
+#menu a {
     margin-left: 16px;
 }
 
-#menu li:hover {
-    border-bottom: solid 3px #5AA6FF;
+#menu a:hover {
+    border-bottom: solid 3px #5FA7EE;
 }
 
 .mobile-icons {
@@ -100,7 +100,7 @@ nav {
         display: none;
     }
     
-    #menu li {
+    #menu a {
         display: none;
     }
     
@@ -136,7 +136,7 @@ nav {
 
 #learn a {
     height: 40px;
-    background-color: #5AA6FF;
+    background-color: #5FA7EE;
     color: white;
     border: none;
     margin-top: 24px;
@@ -150,7 +150,7 @@ nav {
 }
 
 #learn a:hover {
-    background-color: rgba(90, 166, 255, 0.8);
+    background-color: rgba(95, 167, 238, 0.8);
     box-shadow: 0 3px 3px #ccc;
 }
 
@@ -190,6 +190,7 @@ nav {
 
 #quote-attribution {
     font-style: italic;
+    color: #0A3B6B;
 }
 
 .sidebar {
@@ -328,6 +329,8 @@ nav {
 .major-card {
     max-width: 31.5%;
     margin-bottom: 32px;
+    box-shadow: 2px 2px 2px #eee;
+    transition: box-shadow 250ms 100ms linear;
 }
 
 .major-card img {
@@ -345,6 +348,20 @@ nav {
 .major-card p {
     margin: 8px 16px 24px 16px;
     line-height: 1.2;
+}
+
+.major-card:hover {
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .cardcontainer {
+        margin: 32px 24px;
+    }
+    
+    .major-card {
+        max-width: 48%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -443,7 +460,7 @@ footer {
 }
 
 #footer-links span:hover {
-    border-bottom: solid 3px #5AA6FF;
+    border-bottom: solid 3px #5FA7EE;
 }
 
 @media only screen and (max-width: 480px) {
